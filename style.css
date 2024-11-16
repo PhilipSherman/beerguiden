@@ -11,26 +11,29 @@ body {
 
 }
 .btn {
-    background-color: #ffffff; 
-    border:2px solid #0D4215;
+    background-color: #ffffff;
+    border: 2px solid #0D4215;
     color: #0D4215;
     padding: 15px 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    border-radius:12px;
+    border-radius: 12px;
     transition-duration: 0.4s;
     cursor: pointer;
-}
+  }
+  
 .btn:hover {
-    background-color: #0D4215; 
+    background-color: #0D4215;
     color: white;
-}
+  }
+  
 .btn.active {
-    background-color: #0D4215; 
+    background-color: #0D4215;
     color: white;
-}
+  }
+  
 .filterDiv {
     float: left;
     background-color: #2196F3;
@@ -40,13 +43,12 @@ body {
     text-align: center;
     margin: 2px;
     display: none;
-}
-
-
+  }
+  
 .show {
     display: block;
   }
-
+  
 .forsidegif {
     width: 35vw;
   }
