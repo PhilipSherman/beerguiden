@@ -25,9 +25,14 @@ body {
   }
   
   
-.btn.active {
-    background-color: #0D4215 !important;
-    color: white !important;
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  /* Add a dark background to the active button */
+  .btn.active {
+    background-color: #666;
+    color: white;
   }
   
 .filterDiv {
