@@ -1,7 +1,9 @@
+// Set the initial filter to "all" and highlight the "all" button
 filterSelection("all");
 
 function filterSelection(c) {
   const items = document.getElementsByClassName("filterDiv");
+
   // If "all" is selected, clear the filter class
   if (c === "all") c = "";
 
@@ -35,7 +37,7 @@ function w3RemoveClass(element, name) {
   element.className = arr1.join(" ");
 }
 
-// Manage button active state
+// Add click listeners to buttons for highlighting the active button
 const btnContainer = document.getElementById("ButtonContainer");
 const btns = btnContainer.getElementsByClassName("btn");
 
@@ -49,5 +51,9 @@ for (let i = 0; i < btns.length; i++) {
 
     // Add "active" to the clicked button
     this.classList.add("active");
+
+    // Trigger filtering based on the button's filter value
+    const filterValue = this.getAttribute("onclick").match(/filterSelection\('(.+)'\)/)[1];
+    filterSelection(filterValue);
   });
 }
