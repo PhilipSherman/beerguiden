@@ -30,8 +30,8 @@ body {
   }
   
 .btn.active {
-    background-color: #0D4215;
-    color: white;
+    background-color: #0D4215 !important;
+    color: white !important;
   }
   
 .filterDiv {

@@ -1,4 +1,3 @@
-// Set the initial filter to "all" and highlight the "all" button
 filterSelection("all");
 
 function filterSelection(c) {
@@ -37,16 +36,15 @@ function w3RemoveClass(element, name) {
   element.className = arr1.join(" ");
 }
 
-// Add click listeners to buttons for highlighting the active button
+// Manage button active state
 const btnContainer = document.getElementById("ButtonContainer");
 const btns = btnContainer.getElementsByClassName("btn");
 
 for (let i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function () {
     // Remove "active" from all buttons
-    const current = document.getElementsByClassName("active");
-    if (current.length > 0) {
-      current[0].classList.remove("active");
+    for (let j = 0; j < btns.length; j++) {
+      btns[j].classList.remove("active");
     }
 
     // Add "active" to the clicked button
