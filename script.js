@@ -1,3 +1,4 @@
+// Initialize with "all" filter
 filterSelection("all");
 
 function filterSelection(c) {
@@ -42,15 +43,15 @@ const btns = btnContainer.getElementsByClassName("btn");
 
 for (let i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function () {
-    // Remove "active" from all buttons
+    // Remove "active" class from all buttons
     for (let j = 0; j < btns.length; j++) {
       btns[j].classList.remove("active");
     }
 
-    // Add "active" to the clicked button
+    // Add "active" class to the clicked button
     this.classList.add("active");
 
-    // Trigger filtering based on the button's filter value
+    // Filter items based on button's data
     const filterValue = this.getAttribute("onclick").match(/filterSelection\('(.+)'\)/)[1];
     filterSelection(filterValue);
   });
