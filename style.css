@@ -23,7 +23,7 @@ body {
     transition-duration: 0.4s;
 }
 
-.btn:active {
+.btn.active {
     background-color: #0D4215; 
     color: white;
 }
