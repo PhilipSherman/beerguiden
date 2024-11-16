@@ -33,7 +33,7 @@ function w3AddClass(element, name) {
     element.className = arr1.join(" ");
   }
 
-  var btnContainer = document.getElementById("BtnContainer");
+var btnContainer = document.getElementById("BtnContainer");
 var btns = btnContainer.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function() {
