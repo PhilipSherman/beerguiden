@@ -1,29 +1,33 @@
 filterSelection("all");
 
 function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("filterDiv");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  const items = document.getElementsByClassName("filterDiv");
+  // If "all" is selected, clear the filter class
+  if (c === "all") c = "";
+
+  // Loop through all items and show/hide based on the selected filter
+  for (let i = 0; i < items.length; i++) {
+    w3RemoveClass(items[i], "show");
+    if (items[i].className.indexOf(c) > -1) {
+      w3AddClass(items[i], "show");
+    }
   }
 }
 
 function w3AddClass(element, name) {
-  var arr1 = element.className.split(" ");
-  var arr2 = name.split(" ");
-  for (var i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {
+  const arr1 = element.className.split(" ");
+  const arr2 = name.split(" ");
+  for (let i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) === -1) {
       element.className += " " + arr2[i];
     }
   }
 }
 
 function w3RemoveClass(element, name) {
-  var arr1 = element.className.split(" ");
-  var arr2 = name.split(" ");
-  for (var i = 0; i < arr2.length; i++) {
+  let arr1 = element.className.split(" ");
+  const arr2 = name.split(" ");
+  for (let i = 0; i < arr2.length; i++) {
     while (arr1.indexOf(arr2[i]) > -1) {
       arr1.splice(arr1.indexOf(arr2[i]), 1);
     }
@@ -31,16 +35,19 @@ function w3RemoveClass(element, name) {
   element.className = arr1.join(" ");
 }
 
-var btnContainer = document.getElementById("ButtonContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
+// Manage button active state
+const btnContainer = document.getElementById("ButtonContainer");
+const btns = btnContainer.getElementsByClassName("btn");
+
+for (let i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function () {
+    // Remove "active" from all buttons
+    const current = document.getElementsByClassName("active");
     if (current.length > 0) {
-      current[0].className = current[0].className.replace(" active", "");
+      current[0].classList.remove("active");
     }
-    this.className += " active";
+
+    // Add "active" to the clicked button
+    this.classList.add("active");
   });
 }
-
-  
