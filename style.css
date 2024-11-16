@@ -24,14 +24,12 @@ body {
     cursor: pointer;
   }
   
-
-  
-.btn.active {
-    background-color: #0D4215 !important;
-    color: white !important;
+  .btn.active {
+    background-color: #0D4215;
+    color: white;
   }
   
-.filterDiv {
+  .filterDiv {
     float: left;
     background-color: #2196F3;
     color: #ffffff;
@@ -42,7 +40,7 @@ body {
     display: none;
   }
   
-.show {
+  .show {
     display: block;
   }
   
