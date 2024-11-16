@@ -10,6 +10,18 @@ body {
     justify-content: center;
 
 }
+.btn {
+    background-color: #ffffff; 
+    border:2px solid #0D4215;
+    color: #0D4215;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius:12px;
+    transition-duration: 0.4s;
+}
 
 .filterDiv {
     float: left;
