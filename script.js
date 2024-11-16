@@ -34,10 +34,16 @@ function w3AddClass(element, name) {
 
   var btnContainer = document.getElementById("ButtonContainer");
   var btns = btnContainer.getElementsByClassName("btn");
+  
   for (var i = 0; i < btns.length; i++) {
     btns[i].addEventListener("click", function() {
-      var current = document.getElementsByClassName("active");
-      current[0].className = current[0].className.replace(" active", "");
-      this.className += " active";
+      // Remove "active" class from the currently active button (if any)
+      var current = document.querySelector(".btn.active");
+      if (current) {
+        current.classList.remove("active");
+      }
+      // Add "active" class to the clicked button
+      this.classList.add("active");
     });
   }
+  
