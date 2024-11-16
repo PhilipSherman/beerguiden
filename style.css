@@ -28,7 +28,7 @@ body {
     overflow: hidden;
   }
   
-.btn.active {
+.active {
     background-color: #0D4215 !important;
     color: white !important;
   }
