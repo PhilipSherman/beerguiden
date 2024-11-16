@@ -13,14 +13,16 @@ body {
 
 .filterDiv {
     float: left;
-    background-color: #2196F3;
-    color: #ffffff;
-    width: 100px;
-    line-height: 100px;
+    background-color: #ffffff; 
+    border:2px solid #164735;
+    color: #164735;
+    padding: 15px 15px;
     text-align: center;
-    margin: 2px;
+    text-decoration: none;
     display: none;
-}
+    font-size: 16px;
+    border-radius:12px;
+    transition-duration: 0.4s;
 
 .show {
     display: block;
