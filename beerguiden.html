@@ -16,21 +16,22 @@
         </div>
     </div>
 </body>
-<body>
-<div class="filter-container">
-    <button class="filter-button" onclick="filterItems('all')">Vis Alle</button>
-    <button class="filter-button" onclick="filterItems('pilsner')">Pilsner</button>
-    <button class="filter-button" onclick="filterItems('lager')">Lager</button>
-    <button class="filter-button" onclick="filterItems('stout')">Stout</button>
-    <button class="filter-button" onclick="filterItems('andet')">Andet</button>
+
+ 
+<!--Filter system-->
+<div id="myBtnContainer">
+    <button class="btn" onclick="filterSelection('all')">Vis alle</button>
+    <button class="btn" onclick="filterSelection('pilsner')">Pilsner</button>
+    <button class="btn" onclick="filterSelection('lager')">Lager</button>
+    <button class="btn" onclick="filterSelection('stout')">Stout</button>
+    <button class="btn" onclick="filterSelection('weißbeer')">Weißbeer</button>
+    <button class="btn" onclick="filterSelection('andet')">Andet</button>
   </div>
-
-  <div class="filter-item class1">Tuborg Classic (pilsner)</div>
-  <div class="filter-item class2">Item 2 (lager)</div>
-  <div class="filter-item class3">Item 3 (pilsner)</div>
-  <div class="filter-item class1">Item 4 (stout)</div>
-  <div class="filter-item class2">Item 5 (andet)</div>
-  <div class="filter-item class3">Item 6 (andet)</div>
-
-</body>
+  
+  <div class="container">
+    <div class="filterDiv pilsner show">Carlsberg</div>
+    <div class="filterDiv pilsner show">Tuborg Grøn</div>
+    <div class="filterDiv pilsner show">Tuborg Classic</div>
+  </div>
+  
     

@@ -10,38 +10,43 @@ body {
     justify-content: center;
 
 }
-/* Styling for the filter buttons */
-.filter-container {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-
-.filter-button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-.filter-button:hover {
-  background-color: #0056b3;
-}
-
-/* Styling for filterable items */
-.filter-item {
-  display: none;
-  margin: 10px 0;
-  padding: 10px;
-  border: 1px solid #ddd;
-}
-
-/* Visible items */
-.filter-item.visible {
-  display: block;
-}
-
+.btn {
+    background-color: #ffffff;
+    border: 2px solid #0D4215;
+    color: #0D4215;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  .container {
+    margin-top: 20px;
+    overflow: hidden;
+  }
+  
+.btn.active {
+    background-color: #0D4215 !important;
+    color: white !important;
+  }
+  
+.filterDiv {
+    float: left;
+    background-color: #2196F3;
+    color: #ffffff;
+    width: 100px;
+    line-height: 100px;
+    text-align: center;
+    margin: 2px;
+    display: none;
+  }
+  
+.show {
+    display: block;
+  }
   
 .forsidegif {
     width: 35vw;
