@@ -24,10 +24,7 @@ body {
     cursor: pointer;
   }
   
-.btn:hover {
-    background-color: #0D4215;
-    color: white;
-  }
+
   
 .btn.active {
     background-color: #0D4215 !important;
