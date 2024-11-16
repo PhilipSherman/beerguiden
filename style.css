@@ -11,7 +11,7 @@ body {
 
 }
 .btn {
-    background-color: #ffffff;
+    background-color: #F0F3EC;
     border: 2px solid #0D4215;
     color: #0D4215;
     padding: 15px 15px;
@@ -23,14 +23,10 @@ body {
     transition-duration: 0.4s;
     cursor: pointer;
   }
+
   .container {
     margin-top: 20px;
     overflow: hidden;
-  }
-  
-.active {
-    background-color: #0D4215 !important;
-    color: white !important;
   }
   
 .filterDiv {
