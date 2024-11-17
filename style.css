@@ -59,14 +59,15 @@ body {
 .left-column {
   width: 200px;
   background-color: #6E8894;
-  box-shadow: 0px 0px 10px 0px #F3F9D2;
+
+  border-radius: 3px;
   padding: 20px;
 }
 
 .right-column {
   width: 1000px;
   background-color: #6E8894;
-  box-shadow: 0px 0px 5px 0px #F3F9D2;
+
   padding: 20px;
 }
 
