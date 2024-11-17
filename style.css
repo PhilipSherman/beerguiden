@@ -142,3 +142,47 @@ body {
   transform: scale(0.97);
   box-shadow: 0px 0px 5px 0px #e0e0e0;
 }
+
+.indhold {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10vh;
+  padding-bottom: 15vh;
+}
+
+#boks1venstre {
+  display: flex;
+  flex-direction: column;
+  width: 35vw;
+}
+
+#boks1overskrift {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  height: 2vh;
+}
+
+#boks1breadtekst {
+  display: flex;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.indhold2 {
+  display: flex;
+  padding-left: 5vw;
+  align-items: last baseline;
+}
+
+#citat {
+  display: flex;
+  font-size: 2.1vw;
+}
+
+#citatforfatter {
+  display: flex;
+  font-size: 1.4vw;
+}
