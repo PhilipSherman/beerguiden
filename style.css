@@ -1,49 +1,84 @@
 body {
-    background-color: #d3d9d0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f4f4f4;
 }
 
 .forside {
-    width: 100vh;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
-.btn {
-    background-color: #F0F3EC;
-    border: 2px solid #0D4215;
-    color: #0D4215;
-    padding: 15px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 12px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-  }
 
-  .container {
-    margin-top: 20px;
-    overflow: hidden;
-  }
-  
-.filterDiv {
-    float: left;
-    background-color: #2196F3;
-    color: #ffffff;
-    width: 100px;
-    line-height: 100px;
-    text-align: center;
-    margin: 2px;
-    display: none;
-  }
-  
-.show {
-    display: block;
-  }
-  
 .forsidegif {
-    width: 35vw;
-  }
+  max-width: 100%;
+  height: auto;
+  width: 35vw;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin: 10px 0;
+}
+
+#myBtnContainer {
+  margin: 20px 0;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #F0F3EC;
+  border: 2px solid #0D4215;
+  color: #0D4215;
+  font-size: 16px;
+  transition-duration: 0.4s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.filterDiv {
+  padding: 20px;
+  margin: 10px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  float: left;
+  background-color: #2196F3;
+  color: #ffffff;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+
+.show {
+  display: block;
+}

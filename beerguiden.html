@@ -1,39 +1,37 @@
-<htmllang="da">
- <head>
-<link rel="stylesheet" href="style.css">
- <metacharset="utf-8">
- <title>Ølguiden</title>
- <script src="script.js"></script>
- </head>
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ølguiden</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
 
 <body>
     <div class="forside">
-        <div>
-            <img class="forsidegif" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/5c2631156092157.63611150aa18a.gif" alt="forsideoel">
-        </div>
-        <div>
-            <h1>Ølguiden</h1>
-        </div>
+        <img class="forsidegif"
+            src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/5c2631156092157.63611150aa18a.gif"
+            alt="forsideoel">
+        <h1>Ølguiden</h1>
+    </div>
+
+    <!--Filter system-->
+    <div id="myBtnContainer">
+        <button class="btn" onclick="filterSelection('all')">Vis alle</button>
+        <button class="btn" onclick="filterSelection('pilsner')">Pilsner</button>
+        <button class="btn" onclick="filterSelection('lager')">Lager</button>
+        <button class="btn" onclick="filterSelection('stout')">Stout</button>
+        <button class="btn" onclick="filterSelection('ipa')">IPA</button>
+        <button class="btn" onclick="filterSelection('andet')">Andet</button>
+    </div>
+
+    <div class="container">
+        <div class="filterDiv Lager show">Carlsberg</div>
+        <div class="filterDiv pilsner show">Tuborg Grøn</div>
+        <div class="filterDiv pilsner show">Tuborg Classic</div>
+        <div class="filterDiv IPA show">Brewmaster IPA</div>
     </div>
 </body>
 
- 
-<!--Filter system-->
-<div id="myBtnContainer">
-    <button class="btn" onclick="filterSelection('all')">Vis alle</button>
-    <button class="btn" onclick="filterSelection('pilsner')">Pilsner</button>
-    <button class="btn" onclick="filterSelection('lager')">Lager</button>
-    <button class="btn" onclick="filterSelection('stout')">Stout</button>
-    <button class="btn" onclick="filterSelection('ipa')">IPA</button>
-    <button class="btn" onclick="filterSelection('andet')">Andet</button>
-  </div>
-  
-  <div class="container">
-    <div class="filterDiv Lager show">Carlsberg</div>
-    <div class="filterDiv pilsner show">Tuborg Grøn</div>
-    <div class="filterDiv pilsner show">Tuborg Classic</div>
-    <div class="filterDiv IPA show">Brewmaster IPA</div>
-    
-  </div>
-  
-    
+</html>
