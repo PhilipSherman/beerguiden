@@ -40,7 +40,8 @@ body {
   width: 70px;
   height: 70px;
   align-items: center;
-  transition: background-color 0.2s;
+  transition: background-color 0.3s;
+  cursor: pointer;
 }
 
 .anker:hover {
@@ -59,16 +60,15 @@ body {
 .left-column {
   width: 200px;
   background-color: #6E8894;
-
-  border-radius: 3px;
+  border-radius: 5px;
   padding: 20px;
 }
 
 .right-column {
   width: 1000px;
   background-color: #6E8894;
-
   padding: 20px;
+  border-radius: 5px;
 }
 
 .filter-container {
@@ -134,11 +134,11 @@ body {
 }
 
 .filter:active {
-  transform: scale(0.95);
+  transform: scale(0.97);
   box-shadow: 0px 0px 5px 0px #e0e0e0;
 }
 
 .filter.selected {
-  transform: scale(0.95);
+  transform: scale(0.97);
   box-shadow: 0px 0px 5px 0px #e0e0e0;
 }
