@@ -301,3 +301,4 @@ filters.forEach(filter => {
     renderBeers(currentFilter);
   });
 });
+
