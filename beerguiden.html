@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Ølguiden</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+
 </head>
 
 <body>
@@ -16,22 +16,25 @@
         <h1>Ølguiden</h1>
     </div>
 
-    <!--Filter system-->
-    <div id="myBtnContainer">
-        <button class="btn" onclick="filterSelection('all')">Vis alle</button>
-        <button class="btn" onclick="filterSelection('pilsner')">Pilsner</button>
-        <button class="btn" onclick="filterSelection('lager')">Lager</button>
-        <button class="btn" onclick="filterSelection('stout')">Stout</button>
-        <button class="btn" onclick="filterSelection('ipa')">IPA</button>
-        <button class="btn" onclick="filterSelection('andet')">Andet</button>
+    <div class="container">
+        <div class="left-column">
+            <h2>Filtre</h2>
+            <div class="filter-container">
+                <div class="filter selected" data-filter="all">Alle øl</div>
+                <div class="filter" data-filter="Lager">Lager</div>
+                <div class="filter" data-filter="Ale">Ale</div>
+                <div class="filter" data-filter="Stout">Stout</div>
+                <div class="filter" data-filter="IPA">IPA</div>
+                <div class="filter" data-filter="Pilsner">Pilsner</div>
+            </div>
+        </div>
+        <div class="right-column">
+            <h1>Ølinspiration</h1>
+            <div class="beer-container"></div>
+        </div>
     </div>
 
-    <div class="container">
-        <div class="filterDiv Lager show">Carlsberg</div>
-        <div class="filterDiv pilsner show">Tuborg Grøn</div>
-        <div class="filterDiv pilsner show">Tuborg Classic</div>
-        <div class="filterDiv IPA show">Brewmaster IPA</div>
-    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
