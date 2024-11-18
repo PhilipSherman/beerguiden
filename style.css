@@ -178,14 +178,17 @@ body {
   display: flex;
   padding-left: 5vw;
   align-items: last baseline;
+  
 }
 
 #citat {
   display: flex;
-  font-size: 2.1vw;
+  font-size: 40px;
+  color: #e0e0e0;
 }
 
 #citatforfatter {
   display: flex;
-  font-size: 1.4vw;
+  font-size: 30px;
+  color: #e0e0e0;
 }
