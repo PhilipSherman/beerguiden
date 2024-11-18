@@ -6,7 +6,8 @@ const beerItems = [
   {
     name: "Refsvindinge Ale No. 16",
     type: "Stout",
-    image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fshop14539.hstatic.dk%2Fupload_dir%2Fshop%2F158380.w610.h610.fill.jpg&f=1&nofb=1&ipt=efc23868d00ac58050eeeec8ed7b79a7fe418dce2cbec8c615549b1c50e846d7&ipo=images"
+    image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fshop14539.hstatic.dk%2Fupload_dir%2Fshop%2F158380.w610.h610.fill.jpg&f=1&nofb=1&ipt=efc23868d00ac58050eeeec8ed7b79a7fe418dce2cbec8c615549b1c50e846d7&ipo=images",
+    link: "https://bryggeriet-vestfyen.dk/brands/ale-no-16/"
   },
   {
     name: "Limfjords Porter",
@@ -280,7 +281,7 @@ const renderBeers = (filter = '') => {
       const beerEl = document.createElement('div');
       beerEl.classList.add('beer-item');
       beerEl.innerHTML = `
-                    <a href="https://bryggeriet-vestfyen.dk/brands/ale-no-16/">
+                    <a href="${beer.link}">
                     <img src="${beer.image}" alt="${beer.name}" />
                     <h3>${beer.name}</h3>
                     <p>Type: ${beer.type}</p>
