@@ -280,9 +280,11 @@ const renderBeers = (filter = '') => {
       const beerEl = document.createElement('div');
       beerEl.classList.add('beer-item');
       beerEl.innerHTML = `
+                    <a href="https://bryggeriet-vestfyen.dk/brands/ale-no-16/">
                     <img src="${beer.image}" alt="${beer.name}" />
                     <h3>${beer.name}</h3>
                     <p>Type: ${beer.type}</p>
+                    </a>
                 `;
       beerContainer.appendChild(beerEl);
     }
