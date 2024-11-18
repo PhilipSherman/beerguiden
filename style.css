@@ -104,6 +104,7 @@ body {
   text-align: center;
   cursor: pointer;
   background-color: #fff;
+
 }
 
 .beer-item img {
@@ -178,7 +179,7 @@ body {
   display: flex;
   padding-left: 5vw;
   align-items: last baseline;
-  
+
 }
 
 #citat {
