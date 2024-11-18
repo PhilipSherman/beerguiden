@@ -164,12 +164,14 @@ body {
   justify-content: center;
   font-size: 40px;
   height: 2vh;
+  color: #e0e0e0;
 }
 
 #boks1breadtekst {
   display: flex;
   text-align: justify;
   font-size: 20px;
+  color: #e0e0e0;
 }
 
 .indhold2 {
