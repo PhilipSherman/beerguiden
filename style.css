@@ -79,12 +79,12 @@ body {
   margin: 10px 0;
   padding: 10px;
   cursor: pointer;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #e9e8e9;
   border-radius: 5px;
 }
 
 .filter.selected {
-  background-color: #e0e0e0;
+  background-color: #e9e8e9;
 }
 
 .beer-container {
@@ -98,9 +98,9 @@ body {
   width: 450px;
   margin: 10px;
   padding: 10px;
-  border: 0.1vw solid #e0e0e0;
+  border: 0.1vw solid #e9e8e9;
   border-radius: 5px;
-  box-shadow: 0px 0px 1vw 0px #e0e0e0;
+  box-shadow: 0px 0px 1vw 0px #e9e8e9;
   text-align: center;
   cursor: pointer;
   background-color: #fff;
@@ -137,12 +137,12 @@ body {
 
 .filter:active {
   transform: scale(0.97);
-  box-shadow: 0px 0px 5px 0px #e0e0e0;
+  box-shadow: 0px 0px 5px 0px #e9e8e9;
 }
 
 .filter.selected {
   transform: scale(0.97);
-  box-shadow: 0px 0px 5px 0px #e0e0e0;
+  box-shadow: 0px 0px 5px 0px #e9e8e9;
 }
 
 .indhold {
@@ -165,14 +165,14 @@ body {
   justify-content: center;
   font-size: 40px;
   height: 2vh;
-  color: #e0e0e0;
+  color: #e9e8e9;
 }
 
 #boks1breadtekst {
   display: flex;
   text-align: justify;
   font-size: 20px;
-  color: #e0e0e0;
+  color: #e9e8e9;
 }
 
 .indhold2 {
@@ -185,11 +185,11 @@ body {
 #citat {
   display: flex;
   font-size: 35px;
-  color: #e0e0e0;
+  color: #e9e8e9;
 }
 
 #citatforfatter {
   display: flex;
   font-size: 27px;
-  color: #e0e0e0;
+  color: #e9e8e9;
 }
